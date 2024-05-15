@@ -18,5 +18,8 @@ export class FormacionPremiumComponent {
   titulo = "Formacion premium";
   subtitulo = "";
 
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 
 }

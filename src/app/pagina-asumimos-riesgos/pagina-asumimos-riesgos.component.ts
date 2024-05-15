@@ -16,4 +16,7 @@ export class PaginaAsumimosRiesgosComponent {
   subtitulo = "En colaboración con la sociedad";
 
 
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }
