@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formación básica</title>
+  <link rel="shortcut icon" href="assets/img/cabeza.png" type="image/x-icon">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #f3a4ff, #ff8fc1);
+      color: white;
+    }
+
+    .card-body {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .card-title {
+      color: #8a0a9f;
+    }
+
+    .list-unstyled li {
+      color: #8a0a9f;
+    }
+  </style>
+</head>
+
+<body>
+
+  <app-encabezado [t]="titulo" [st]="subtitulo" [paginaFormacion]="true" ngSkipHydration></app-encabezado>
+  <div class="container mt-5">
+
+    <div class="row justify-content-around mb-3">
+      <div class="col-md-6">
+        <img src="assets/img/cursoPremium1.webp" class="img-fluid rounded-start mt-4" alt="...">
+        <img src="assets/img/cursoPremium2.webp" class="img-fluid rounded-start mt-4" alt="...">
+      </div>
+      <div class="col-md-6 mt-4 mb-5">
+        <div class="card-body text-justify">
+          <h5 class="card-title text-center mt-4 mb-4">Descripción</h5>
+          <p class="card-text">
+            <strong>Curso Premium sobre Educación Sexual</strong> El curso premium sobre educación sexual ofrece una
+            experiencia educativa exclusiva y de alta calidad, diseñada para aquellos que buscan un conocimiento
+            profundo y una comprensión completa de la salud sexual y reproductiva. Este programa de aprendizaje avanzado
+            va más allá de los conceptos básicos y aborda temas sofisticados con un enfoque en la excelencia académica y
+            la aplicación práctica.
+          </p>
+          <h3>Contenido del Curso:</h3>
+          <ul class="list-unstyled">
+            <li><strong>Exploración Profunda de la Anatomía y Fisiología Sexual:</strong> Este módulo proporciona un
+              análisis detallado de la anatomía y fisiología sexual, incluyendo aspectos avanzados de la respuesta
+              sexual humana, la reproducción asistida y la neurobiología del deseo.</li>
+            <li><strong>Abordaje Integral de la Salud Sexual y Reproductiva:</strong> Aquí se profundiza en los aspectos
+              más complejos de la salud sexual, como la gestión avanzada de las enfermedades de transmisión sexual, la
+              salud reproductiva en poblaciones específicas y el manejo de situaciones clínicas difíciles.</li>
+            <li><strong>Perspectivas Avanzadas sobre la Sexualidad en la Sociedad: </strong>Este módulo examina
+              críticamente la interacción entre la sexualidad humana y diversos contextos sociales, culturales y
+              políticos, con un enfoque en la equidad de género, los derechos sexuales y reproductivos, y la diversidad
+              sexual.</li>
+            <li><strong>Innovación en Investigación y Práctica Sexual:</strong> Se exploran las últimas investigaciones
+              y avances en el campo de la sexualidad humana, incluyendo nuevas terapias sexuales, tecnologías emergentes
+              en salud sexual y estrategias innovadoras para la educación sexual.
+            </li>
+          </ul>
+          <h3>Metodología:</h3>
+          <p>
+            El curso premium emplea una metodología rigurosa y multidisciplinaria, que incluye conferencias magistrales,
+            seminarios especializados, estudios de caso interactivos, prácticas clínicas simuladas y proyectos de
+            investigación aplicada. Se fomenta la participación activa de los participantes y se promueve un ambiente de
+            aprendizaje estimulante y colaborativo.
+          </p>
+          <h3>Objetivos del Curso:</h3>
+          <ul class="list-unstyled">
+            <li>Adquirir un dominio avanzado de los conceptos y principios fundamentales de la salud sexual y
+              reproductiva.</li>
+            <li>Desarrollar habilidades de análisis crítico y resolución de problemas en el ámbito de la sexualidad
+              humana.</li>
+            <li>Integrar perspectivas éticas, sociales y culturales en la práctica profesional relacionada con la salud
+              sexual.</li>
+            <li>Mantenerse actualizado con las últimas investigaciones y avances en el campo de la educación y práctica
+              sexual.</li>
+            <li>Liderar iniciativas innovadoras y de vanguardia en educación sexual y salud pública.</li>
+          </ul>
+          <p>
+            Al completar este curso premium, los participantes estarán preparados para abordar los desafíos más
+            complejos en el ámbito de la educación sexual y la salud sexual, y para contribuir significativamente al
+            avance del conocimiento y la práctica en este campo crucial.
+          </p>
+          <p class="card-text"><small class="text-body-secondary"></small></p>
+          <div class="text-center">
+            <a routerLink="/pagina-tienda" routerLinkActive="active" style="text-decoration: none; color: inherit;" class="w-100">
+              <button style="background-color: #af91d1; color: aliceblue; padding: 10px 20px; border-radius: 20px; margin-right: 10px;">Volver</button>
+            </a>
+            <a routerLink="/pagina-pagos" routerLinkActive="active" style="text-decoration: none; color: inherit;" class="w-100">
+              <button style="background-color: #af91d1; color: aliceblue; padding: 10px 20px; border-radius: 20px;">Comprar ahora</button>
+            </a>      
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

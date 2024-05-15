@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+</head>
+<body>
+  
+  <app-encabezado [t]="titulo" [st]="subtitulo" ngSkipHydration></app-encabezado>
+  <p class="d-flex justify-content-center font-weight-bold text-purple fs-2 mt-5" style="color: blueviolet;">Que riesgos asumimos?</p>
+
+  <div class="container mt-3 mt-5">
+    <div class="col">
+      <div class=" p-3 mx-3 mb-3 mt-3">
+        <div class="card-body text-center">
+          <h5 class="card-title font-weight-bold">Riesgos</h5>
+          <p class="card-text text-center mt-4" style="text-align: justify;">Existen varios riesgos que podrían asumirse si no se abordan adecuadamente. Es crucial que la información proporcionada sea precisa, apropiada para la edad y nivel de desarrollo de los estudiantes, y se entregue de manera sensible y respetuosa. Uno de los principales riesgos es proporcionar información inadecuada o incorrecta, lo que podría confundir a los estudiantes o transmitirles mensajes erróneos sobre temas importantes relacionados con la sexualidad y la salud. Además, existe el riesgo de generar controversia entre los padres, miembros de la comunidad o grupos religiosos si la charla no se lleva a cabo con transparencia y respeto a las diferentes perspectivas y valores culturales. También es importante considerar la privacidad y confidencialidad de los estudiantes, asegurándose de que se sientan seguros para hacer preguntas y participar en la discusión sin temor a la estigmatización o la discriminación. Otro riesgo potencial es el incumplimiento de las políticas y regulaciones escolares o la falta de consentimiento informado por parte de los padres si la charla aborda temas sensibles o controversiales. En resumen, es fundamental que las charlas sobre educación sexual en los centros educativos sean planificadas y llevadas a cabo con cuidado y consideración, priorizando el bienestar y la seguridad de los estudiantes en todo momento.</p>
+        </div>
+        <div class="d-flex justify-content-center mt-5 mb-5">
+          <img src="assets/img/Riesgos.jpg" class="img-fluid rounded-start" alt="..." style="max-width: 70%; max-height: 50vh;">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class=" p-3 mx-3 mb-5">
+        <div class="card-body text-center">
+          <h5 class="card-title font-weight-bold">Importancia</h5>
+          <p class="card-text text-center mt-4" style="text-align: justify;">Asumir los riesgos asociados con charlas sobre educación sexual en centros educativos es crucial para proporcionar información precisa y apropiada, fomentar la salud sexual y el bienestar, y crear un ambiente de confianza y apertura donde los estudiantes puedan obtener conocimientos necesarios para tomar decisiones informadas y saludables.</p>
+        </div>
+        <div class="d-flex justify-content-center mt-5 mb-5">
+          <img src="assets/img/riesgos1.jpg" class="img-fluid rounded-start" alt="..." style="max-width: 70%; max-height: 50vh;">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<app-footer></app-footer>
+</html>

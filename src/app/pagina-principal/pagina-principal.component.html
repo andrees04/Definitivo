@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="pagina-principal.component.css" rel="stylesheet">
+</head>
+<body>
+  <app-encabezado [t]="titulo" [st]="subtitulo" ngSkipHydration></app-encabezado>
+
+  <p class="d-flex justify-content-center font-weight-bold text-purple fs-2 mt-5">Que es la educación sexual?</p>
+
+  <div class="container-fluid max-container">
+    <div class="mr-md-2 ml-md-5 px-md-2">
+        <div class="container-fluid px-md-2">
+            <div class="mb-3">
+                <div class="row g-md-4">
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/ilustracion2.svg" class="img-fluid rounded-start" alt="..." style="max-width: 100%; max-height: 50vh;">
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <div class="card-body">
+                            <h3 class="card-title mt-md-5 mb-3 mb-md-2 font-weight-bold px-md-4">Introducción</h3>
+                            <p class="card-text mb-2 mb-md-3 px-md-4">La educación sexual es un componente crucial del desarrollo integral de los individuos. A través de ella, se proporciona información precisa y apropiada sobre aspectos relacionados con la sexualidad, el cuerpo humano, las relaciones interpersonales y la salud sexual. Esta educación busca promover el autoconocimiento, el respeto propio y hacia los demás, así como el desarrollo de habilidades para tomar decisiones responsables en materia sexual. Abordar estos temas desde edades tempranas contribuye a prevenir riesgos como embarazos no deseados, infecciones de transmisión sexual y situaciones de violencia. En última instancia, una educación sexual integral promueve relaciones más sanas y equitativas.</p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title mt-4 mt-md-5 mb-3 mb-md-2 font-weight-bold px-md-4">Importancia</h3>
+                            <p class="card-text mb-2 mb-md-3 px-md-4">La educación sexual es crucial porque empodera a las personas para tomar decisiones informadas sobre su salud sexual y reproductiva, previene riesgos como embarazos no deseados e infecciones de transmisión sexual, promueve relaciones saludables y fomenta el respeto y la equidad de género.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+  <section class="portafolio">
+      <h2 class="d-flex justify-content-center font-weight-bold text-purple fs-2 mt-5 mb-5">Nuestra Clínica</h2>
+      <div class="galeria-port d-flex justify-content-between mb-5">
+        <div class="imagen-port">
+          <img src="assets/img/riesgos12.jpg" class="img-fluid img-thumbnail" alt="">
+          <a class="nav-link" routerLink="/pagina-asumimos-riesgos" routerLinkActive="active">
+          <div class="hover-galeria">
+              <img class="iconito" src="assets/img/icono1.png" alt="">
+            <p>Riesgos</p>
+          </div>
+        </a>
+        </div>
+        <div class="imagen-port">
+          <img src="assets/img/quienessomos.jpg" class="img-fluid img-thumbnail" alt="">
+          <a class="nav-link" routerLink="/pagina-quienes-somos" routerLinkActive="active">
+          <div class="hover-galeria">
+              <img src="assets/img/icono1.png" alt="">
+            <p>Quienes somos?</p>
+          </div>
+        </a>
+        </div>
+      
+        <div class="imagen-port">
+          <img src="assets/img/img3.jpg" class="img-fluid img-thumbnail" alt="">
+          <a class="nav-link" routerLink="/pagina-estadisticas" routerLinkActive="active">
+          <div class="hover-galeria">
+              <img src="assets/img/icono1.png"  alt="">
+            <p>Estadisticas</p>
+          </div>
+        </a>
+        </div>
+      
+        <div class="imagen-port">
+          <img src="assets/img/img4.jpg" class="img-fluid img-thumbnail" alt="">
+          <a class="nav-link" routerLink="/pagina-tienda" routerLinkActive="active">
+          <div class="hover-galeria">
+              <img src="assets/img/icono1.png" alt="">
+            <p>Inscripciones</p>
+          </div>
+        </a>
+        </div>
+     
+        <div class="imagen-port">
+          <img src="assets/img/cambioprueba1.jpg" class="img-fluid img-thumbnail" alt="">
+        </div>
+        <div class="imagen-port">
+          <img src="assets/img/cambioprueba2.png" class="img-fluid img-thumbnail" alt="">
+        </div>
+        <div class="imagen-port">
+          <img src="assets/img/cambioprueba3.jpg" class="img-fluid img-thumbnail" alt="">
+        </div>
+        <div class="imagen-port">
+          <img src="assets/img/cambioprueba4.jpg" class="img-fluid img-thumbnail" alt="">
+        </div>
+      </div>
+  </section>
+  <app-cartas-footer></app-cartas-footer>
+
+  <section class="clientes contenedor mt-5 mb-5">
+    <h2 class="d-flex justify-content-center font-weight-bold text-purple fs-2 mt-5">Nuestros Especialistas</h2>
+    <div class="cards row ">
+      <div class="card col-lg-6 col-md-12 mb-4">
+      <div class="row no-gutters align-items-center">
+          <div class="col-md-4 text-center">
+              <img src="assets/img/descarga.jpg" alt="" class="img-fluid rounded-circle mx-auto my-3">
+          </div>
+          <div class="col-md-8">
+              <div class="contenido-texto-card text-center justify-content-center" style="color: aliceblue;">
+                  <h4 class="mb-3">Oscar Claramunt</h4>
+                  <p class="mb-0">Profesional médico, especializado en el ámbito sexual</p>
+              </div>
+          </div>
+      </div>
+  </div>
+        <div class="card col-lg-6 col-md-12 mb-4">
+            <div class="row no-gutters align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="assets/img/psicologa1.png" alt="" class="img-fluid rounded-circle mx-auto my-3">
+                </div>
+                <div class="col-md-8">
+                    <div class="contenido-texto-card text-center justify-content-center" style="color: aliceblue;">
+                        <h4 class="mb-3">Sofia Velgara</h4>
+                        <p class="mb-0">Asistenta personal (psicóloga), especializada en el ámbito sexual</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+      <h2>Datos API</h2>
+      <li *ngFor="let item of data">
+        {{ item.name }} </li>
+    </div>
+
+
+</section>
+<app-footer></app-footer>

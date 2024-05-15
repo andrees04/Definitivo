@@ -1,0 +1,20 @@
+.textoMorado{
+    color: blueviolet;
+}
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: white;
+}
+.custom-radio input[type="radio"]:checked + .custom-control-label::before {
+    background-color: rgb(255, 124, 255);
+    border-color: rgb(255, 124, 255);
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .custom-control-label::before {
+    background-color: rgb(255, 124, 255);
+    border-color: rgb(255, 124, 255);
+}
+.form-control:focus {
+    border-color: rgb(218, 124, 255); /* Color del borde al hacer clic */
+    box-shadow: 0 0 0 0.2rem rgba(240, 178, 255, 0.5); /* Color de la sombra al hacer clic */
+}

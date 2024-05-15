@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Login Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <app-encabezado [t]="titulo" [st]="subtitulo" ngSkipHydration></app-encabezado><div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-15">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center">Inicio de sesión</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Usuario">Usuario</label>
+                            <input type="text" id="Usuario" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Contraseña">Contraseña</label>
+                            <input type="password" id="Contraseña" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+                    </form>
+                </div>
+                <div class="card-header">
+                    ¿No tienes una cuenta? <a routerLink="/pagina-registro" routerLinkactive="active">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+<app-footer></app-footer>
+</html>

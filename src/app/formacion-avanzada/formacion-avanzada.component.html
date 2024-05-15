@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formación básica</title>
+  <link rel="shortcut icon" href="assets/img/cabeza.png" type="image/x-icon">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #f3a4ff, #ff8fc1);
+      color: white;
+    }
+
+    .card-body {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .card-title {
+      color: #8a0a9f;
+    }
+
+    .list-unstyled li {
+      color: #8a0a9f;
+    }
+  </style>
+</head>
+
+<body>
+
+  <app-encabezado [t]="titulo" [st]="subtitulo" [paginaFormacion]="true" ngSkipHydration></app-encabezado>
+  <div class="container mt-5">
+
+    <div class="row justify-content-around mb-3">
+      <div class="col-md-6">
+        <img src="assets/img/cursoAvanzado1.webp" class="img-fluid rounded-start mt-4" alt="...">
+        <img src="assets/img/img3.jpg" class="img-fluid rounded-start mt-4" alt="...">
+      </div>
+      <div class="col-md-6 mt-4 mb-5">
+        <div class="card-body text-justify">
+          <h5 class="card-title text-center mt-4 mb-4">Formación avanzada</h5>
+          <p class="card-text">
+            <strong>El curso avanzado sobre educación sexua</strong> Proporciona un estudio profundo y especializado de
+            los conceptos clave relacionados con la salud sexual y reproductiva. Diseñado para aquellos que desean
+            expandir su comprensión y habilidades en este campo, este curso aborda temas avanzados y desafiantes para
+            promover un entendimiento más completo y crítico de la sexualidad humana.
+          </p>
+          <h3>Contenido del Curso:</h3>
+          <ul class="list-unstyled">
+            <li><strong>Anatomía y Fisiología Avanzada:</strong> Este módulo profundiza en la anatomía sexual y los
+              procesos fisiológicos relacionados con la sexualidad humana, explorando temas como la respuesta sexual, la
+              reproducción asistida y la disfunción sexual.</li>
+            <li><strong>Salud Sexual Integral:</strong> Aquí se analizan en detalle los aspectos de la salud sexual,
+              incluyendo la prevención y tratamiento de enfermedades de transmisión sexual, la salud reproductiva, la
+              salud mental y emocional en relación con la sexualidad.</li>
+            <li><strong>Sexualidad en la Cultura y la Sociedad:</strong>Este módulo examina la influencia de la cultura,
+              la religión, la política y otros factores sociales en la percepción y expresión de la sexualidad, así como
+              los desafíos y las oportunidades para la educación sexual en diversas comunidades.</li>
+            <li><strong>Investigación y Avances en Sexualidad:</strong> Se revisan las últimas investigaciones y avances
+              en el campo de la sexualidad humana, incluyendo nuevos métodos anticonceptivos, terapias sexuales,
+              tecnologías reproductivas y otros desarrollos relevantes.
+            </li>
+          </ul>
+          <h3>Metodología:</h3>
+          <p>
+            El curso avanzado combina una variedad de metodologías educativas, como lecturas especializadas, estudios de
+            casos, debates, investigaciones dirigidas y proyectos prácticos. Se fomenta la participación activa de los
+            estudiantes y se promueve un ambiente de aprendizaje colaborativo y crítico.
+          </p>
+          <h3>Objetivos del Curso:</h3>
+          <ul class="list-unstyled">
+            <li>Profundizar en el conocimiento de la anatomía, fisiología y salud sexual humana.</li>
+            <li>Desarrollar habilidades para abordar y resolver problemas complejos relacionados con la sexualidad.</li>
+            <li>Analizar críticamente la influencia de los contextos socio-culturales en la sexualidad.</li>
+            <li>Familiarizarse con las últimas investigaciones y avances en el campo de la educación sexual.</li>
+            <li>Capacitar a los participantes para liderar iniciativas de educación sexual avanzada en sus comunidades.
+            </li>
+          </ul>
+          <p>
+            Al completar este curso, los participantes estarán preparados para abordar de manera avanzada y efectiva los
+            desafíos y oportunidades en el campo de la educación sexual, contribuyendo al bienestar y la salud sexual de
+            individuos y comunidades.
+          </p>
+          <p class="card-text"><small class="text-body-secondary"></small></p>
+          <div class="text-center">
+            <a routerLink="/pagina-tienda" routerLinkActive="active" style="text-decoration: none; color: inherit;" class="w-100">
+              <button style="background-color: #af91d1; color: aliceblue; padding: 10px 20px; border-radius: 20px; margin-right: 10px;">Volver</button>
+            </a>
+            <a routerLink="/pagina-pagos" routerLinkActive="active" style="text-decoration: none; color: inherit;" class="w-100">
+              <button style="background-color: #af91d1; color: aliceblue; padding: 10px 20px; border-radius: 20px;">Comprar ahora</button>
+            </a>      
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

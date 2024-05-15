@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formación básica</title>
+  <link rel="shortcut icon" href="assets/img/cabeza.png" type="image/x-icon">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #f3a4ff, #ff8fc1);
+      color: white;
+    }
+
+    .card-body {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .card-title {
+      color: #8a0a9f;
+    }
+
+    .list-unstyled li {
+      color: #8a0a9f;
+    }
+  </style>
+</head>
+
+<body>
+
+  <app-encabezado [t]="titulo" [st]="subtitulo" [paginaFormacion]="true" ngSkipHydration></app-encabezado>
+  <div class="container mt-5">
+
+    <div class="row justify-content-around mb-3">
+      <div class="col-md-6">
+        <img src="assets/img/cursoBasico1.webp" class="img-fluid rounded-start mt-4" alt="...">
+        <img src="assets/img/CursoBasico2.jpg" class="img-fluid rounded-start mt-4" alt="...">
+      </div>
+   
+      <div class="col-md-6 mt-4 mb-5">
+        <div class="card-body text-justify">
+          <h5 class="card-title text-center mt-4 mb-4">Descripción</h5>
+          <p class="card-text">
+            <strong>El curso básico de educación sexual</strong> proporciona una introducción comprensiva a los
+            conceptos fundamentales relacionados con la salud sexual y reproductiva. Diseñado para personas de
+            todas las edades, géneros y antecedentes, este curso aborda temas relevantes que promueven el
+            entendimiento y el respeto hacia la sexualidad humana.
+          </p>
+          <h3>Contenido del Curso:</h3>
+          <ul class="list-unstyled">
+            <li><strong>Fundamentos de la sexualidad humana:</strong> Este módulo explora los aspectos
+              biológicos, psicológicos y sociales de la sexualidad humana, incluyendo la anatomía, la
+              fisiología y el desarrollo sexual.</li>
+            <li><strong>Salud sexual y reproductiva:</strong> Aquí se cubren temas como la contracepción, la
+              planificación familiar, las infecciones de transmisión sexual (ITS), la prevención del VIH/SIDA y el
+              cuidado de la salud sexual.</li>
+            <li><strong>Relaciones saludables:</strong> Este módulo se centra en la comunicación efectiva, el
+              consentimiento, la prevención del abuso y la violencia en las relaciones, así como en la construcción de
+              relaciones respetuosas y equitativas.</li>
+            <li><strong>Diversidad sexual y de género:</strong> Se aborda la comprensión y el respeto hacia la
+              diversidad sexual y de género, incluyendo orientaciones sexuales, identidades de género y derechos LGBTQ+.
+            </li>
+            <li><strong>Educación sexual en la sociedad:</strong> Este último módulo examina la importancia de la
+              educación sexual en la sociedad, los desafíos y las barreras para su implementación, así como las
+              estrategias para promover una educación sexual integral y accesible.</li>
+          </ul>
+          <h3>Metodología:</h3>
+            <p>
+              El curso combina una variedad de recursos didácticos, incluyendo lecturas, videos educativos, actividades interactivas y discusiones en grupo. Se fomenta la participación activa de los estudiantes y se promueve un ambiente de aprendizaje inclusivo y respetuoso.
+            </p>
+            <h3>Objetivos del Curso:</h3>
+            <ul class="list-unstyled">
+              <li>Comprender los conceptos básicos relacionados con la salud sexual y reproductiva.</li>
+              <li>Fomentar una actitud abierta y respetuosa hacia la sexualidad humana.</li>
+              <li>Promover habilidades para tomar decisiones informadas y saludables en temas sexuales.</li>
+              <li>Reconocer y respetar la diversidad sexual y de género en la sociedad.</li>
+              <li>Impulsar la promoción de una educación sexual integral y accesible en la comunidad.</li>
+            </ul>
+            <p>
+              Al completar este curso, los participantes estarán equipados con los conocimientos y habilidades necesarios para abordar de manera informada y responsable los aspectos relacionados con la sexualidad en su vida personal y en la sociedad en general.
+            </p>
+            <p class="card-text"><small class="text-body-secondary"></small></p>
+
+            <div class="text-center">
+              <a routerLink="/pagina-tienda" routerLinkActive="active" style="text-decoration: none; color: inherit;" class="w-100">
+                <button style="background-color: #af91d1; color: aliceblue; padding: 10px 20px; border-radius: 20px; margin-right: 10px;">Volver</button>
+              </a>
+              <a routerLink="/pagina-pagos" routerLinkActive="active" style="text-decoration: none; color: inherit;" class="w-100">
+                <button style="background-color: #af91d1; color: aliceblue; padding: 10px 20px; border-radius: 20px;">Comprar ahora</button>
+              </a>      
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

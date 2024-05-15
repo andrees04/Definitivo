@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Clínica Médica</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link href="pagina-quienes-somos.component.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <app-encabezado [t]="titulo" [st]="subtitulo" ngSkipHydration></app-encabezado>
+
+
+
+  <section id="quienes-somos" class="py-5">
+    <div class="container">
+      <h2 class="d-flex justify-content-center font-weight-bold text-purple fs-2 mt-5 mb-5">Quiénes Somos</h2>
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="quienes-somos-texto">
+            <p class="lead text-center">
+              Caminos Íntimos: Navegando en la Sexualidad es una empresa pionera en el ámbito de la salud sexual y
+              emocional, comprometida con el bienestar integral de sus clientes. Contamos con la distinguida
+              colaboración de dos de los mejores médicos y psicólogos de España, cuya experiencia y dedicación se
+              reflejan en cada uno de nuestros servicios. Desde terapias individuales hasta talleres educativos, nuestro
+              equipo multidisciplinario ofrece un enfoque holístico para abordar las diversas dimensiones de la
+              sexualidad humana. En Caminos Íntimos, entendemos la importancia de crear un espacio seguro y confidencial
+              donde nuestros clientes puedan explorar, comprender y mejorar su relación con su sexualidad, promoviendo
+              así una vida más plena y satisfactoria.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="medicos">
+    <div class="container mt-5">
+      <h2 class="d-flex justify-content-center font-weight-bold text-purple fs-2 mb-5">Nuestros Especialistas</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/img/descarga.jpg" class="card-img-top" alt="Médico 2">
+            <div class="card-body">
+              <h5 class="card-title">Dr. Oscar Claramunt</h5>
+              <p class="card-text">Especialidad: Reconocido como uno de los principales referentes en el ámbito de la
+                salud sexual en España, aporta décadas de experiencia y un profundo compromiso con el bienestar de sus
+                pacientes. Su enfoque empático, habilidad para combinar la ciencia médica y una sensibilidad humanista
+                lo convierten en un aliado invaluable en el camino hacia una sexualidad saludable y satisfactoria. El
+                Dr.Claramunt podrá ayudarle y escucharle en todo lo que necesite y hacer de sí una experiencia mejor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/img/psicologa1.png" class="card-img-top" alt="Médico 3">
+            <div class="card-body">
+              <h5 class="card-title">Dra. Sofia Velgara</h5>
+              <p class="card-text">Especialidad: Una destacada asistente personal y psicóloga especializada en salud
+                sexual, destaca por su enfoque integral y su profundo compromiso con el bienestar emocional de sus
+                pacientes. Con una combinación única de habilidades clínicas y comprensión empática, la Dra. Velgara
+                guía a sus clientes en el proceso de explorar y comprender su sexualidad, brindando un apoyo inigualable
+                en su sexualidad de la mejor forma.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<app-footer></app-footer>
+
+</html>
