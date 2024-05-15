@@ -36,6 +36,8 @@ export class PaginaPrincipalComponent {
 
   ngOnInit() : void {
     this.llenarData();
+      window.scrollTo(0, 0);
+    
   }
 
   llenarData() {
@@ -44,5 +46,7 @@ export class PaginaPrincipalComponent {
       console.log(this.data);
     });
   }
+
+  
 
 }

@@ -25,6 +25,7 @@ export class PaginaTiendaComponent {
   constructor(private apiService: ApiService) {}
   
   ngOnInit() : void {
+      window.scrollTo(0, 0);
     this.apiService.getData().subscribe(
       data => {
         this.personajes = data;

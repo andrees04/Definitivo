@@ -13,4 +13,8 @@ import { RouterLink } from '@angular/router';
 export class PaginaInicioSesionComponent {
   titulo = "Potencia tus estudios sobre la educacion sexual";
   subtitulo = "En colaboracion con la sociedad";
+
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }

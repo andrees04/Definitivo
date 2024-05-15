@@ -12,4 +12,8 @@ import { FooterComponent } from '../componentes/footer/footer.component';
 export class PaginaQuienesSomosComponent {
   titulo = "Quienes somos?";
   subtitulo = "En colaboracion con la sociedad";
+
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }

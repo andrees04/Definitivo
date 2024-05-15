@@ -14,5 +14,9 @@ export class PaginaPagosComponent {
   titulo = "Formulario de Pago";
   subtitulo = "En colaboracion con la sociedad";
 
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
+
 
 }

@@ -13,6 +13,9 @@ export class PaginaContactoComponent {
   titulo = "Contactanos";
   subtitulo = "En colaboracion con la sociedad";
 
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 
 }
 

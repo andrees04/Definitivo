@@ -19,5 +19,9 @@ export class FormacionAvanzadaComponent {
   titulo = "Formacion avanzada";
   subtitulo = "";
 
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
+
 
 }
