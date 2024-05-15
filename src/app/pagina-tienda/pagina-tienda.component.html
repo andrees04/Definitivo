@@ -82,17 +82,16 @@
   
 
   <div class="card mb-3 mx-auto" style="max-width: 1000px;">
-    <!-- Contenido del descuento -->
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="assets/img/interrogante.png" class="img-fluid rounded-start" alt="...">
+        <img src={{rutaImagen}} class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-8 d-flex align-items-center">
         <div class="card-body text-center">
           <h2 class="card-title">Descuento!</h2>
           <p id="textoDescuento" class="card-text text-center">{{textoDescuento}}</p>
-          <p class="card-text text-center">Descuento: {{descuento}}</p>
-          <button (click)="hacerDescuento()" style="background-color: #af91d1; color: aliceblue; padding: 10px 20px; border-radius: 20px; margin-right: 10px;">Ver descuento</button>
+          <p *ngIf="descuento!='vacio'" class="card-text text-center">Descuento: {{descuento}}</p>
+          <button *ngIf="descuento=='vacio'" (click)="hacerDescuento()" style="background-color: #af91d1; color: aliceblue; padding: 10px 20px; border-radius: 20px; margin-right: 10px;">Ver descuento</button>
         </div>
       </div>
     </div>
